@@ -1,14 +1,18 @@
-import React from 'react';
-import {warningMessage} from '../data/development';
+import React from "react";
+import { messages } from "../data/development";
 
-const Message = () => {
+const Message = ({ type }) => {
+    const messageData = messages[type];
+
+    if (!messageData) return null;
+
     return (
-        <div className="message bg-red-500 rounded-xl bg-[#FF5050] text-sm w-full font-medium text-white px-4 py-4 mx-4">
-            <div className="header flex items-center">
-                <img width="27px" height="27px" className="" src={warningMessage.icon}></img>
-                <h1 className="uppercase">{warningMessage.header}</h1>
+        <div className={`bg-[#FF5050] rounded-xl text-sm font-medium text-white px-5 py-1.5 mx-[12.5%]`}>
+            <div className="header flex items-center gap-2">
+                <img width="27px" height="27px" src={messageData.icon} alt={messageData.header} />
+                <h1 className="uppercase font-bold text-2xl">{messageData.header}</h1>
             </div>
-            <p className="">{warningMessage.message}</p>
+            <p>{messageData.message}</p>
         </div>
     );
 };

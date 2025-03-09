@@ -2,11 +2,12 @@
 ####################### Makefile Template ##############################
 ########################################################################
 # Student settings
-NAME = YOURNAME
-SID = YOURSID
-EMAIL = YOURUTAEMAIL
+NAME = Toan Nguyen
+SID = 1001862752
+EMAIL = ttn2752@mavs.uta.edu
 SEMESTER = SPRING2025
 PROJECT=PROJ03
+YOUTUBE = https://youtube.com/shorts/-YnDC3fUCHk
  
 
 ####### DO NOT EDIT BELOW THIS LINE!!! #########
